@@ -1,51 +1,25 @@
-# React + TypeScript + Vite
+# easytsy 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A product management web app for e-commerce sellers**  
+Streamline product creation, variants, addons, packaging, and shipping calculations for multi-category stores.
 
-Currently, two official plugins are available:
+![easytsy-screenshot](https://example.com/path/to/screenshot.png) _(Replace with actual screenshot)_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features ✨
 
-## Expanding the ESLint configuration
+- **Store-centric workflow**: All entities linked to a store.
+- **Dynamic product forms**: Fields adapt to product categories.
+- **Variant system**: Handle size/color variants with custom pricing.
+- **Addons & Packaging**: Attach reusable components to products.
+- **Shipping Calculator**: Zone-based pricing with dimensional weight.
+- **Profit Tables**: Preview margins across discount scenarios.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack 🛠️
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# vite-react-tailwindcss-shadcn-project-starter
+| Area     | Technologies                            |
+| -------- | --------------------------------------- |
+| Frontend | React + TypeScript, shadcn/ui, Tailwind |
+| Backend  | Express.js                              |
+| Database | MYSQL                                   |
+| State    | Zustand                                 |
+| Forms    | react-hook-form + Zod validation        |
